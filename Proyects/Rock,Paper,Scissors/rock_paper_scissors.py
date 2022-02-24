@@ -1,28 +1,24 @@
-from random import choice
-npc = choice(['rock', 'paper', 'scissors'])
+print("Rock...")
+print("Paper...")
+print("Scissors...")
 
-player_1 = input('Select a choice \n 1. rock \n 2. paper \n 3. scissors \n'.lower())
+player1 = input("Player 1, make your move: ")
+player2 = input("Player 2, make your move: ")
 
-if player_1 == 'rock' and npc == 'rock':
-    print(f'PC chooses {npc} \n Its a Draw!!! ')
-elif player_1 == 'rock' and npc == 'paper':
-    print(f'PC chooses {npc} \n You Lose!!! ')
-elif player_1 == 'rock' and npc == 'scissors':
-    print(f'PC chooses {npc} \n You Win!!! ')
 
-elif player_1 == 'paper' and npc == 'rock':
-    print(f'PC chooses {npc} \n You Win!!! ')
-elif player_1 == 'paper' and npc == 'paper':
-    print(f'PC chooses {npc} \n Its a Draw!!! ')
-elif player_1 == 'paper' and npc == 'scissors':
-    print(f'PC chooses {npc} \n You Lose!!! ')
-
-elif player_1 == 'scissors' and npc == 'rock':
-    print(f'PC chooses {npc} \n You Lose!!! ')
-elif player_1 == 'scissors' and npc == 'paper':
-    print(f'PC chooses {npc} \n You Win!!! ')
-elif player_1 == 'scissors' and npc == 'scissors':
-    print(f'PC chooses {npc} \n Its a Draw!!! ')
-
+if player1 == "rock" and player2 == "scissors":
+	print("player1 wins!")
+elif player1 == "rock" and player2 == "paper":
+	print("player2 wins!")
+elif player1 == "paper" and player2 == "rock":
+	print("player1 wins!")
+elif player1 == "paper" and player2 == "scissors":
+	print("player2 wins!")
+elif player1 == "scissors" and player2 == "rock":
+	print("player2 wins!")
+elif player1 == "scissors" and player2 == "paper":
+	print("player1 wins!")
+elif player1 == player2:
+	print("It's a tie!")
 else:
-    print('Something go wrong')
+	print("something went wrong")
