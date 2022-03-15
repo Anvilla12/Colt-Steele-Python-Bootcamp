@@ -1,7 +1,7 @@
 from random import choice
-print('''=====================================================================
+print('''==========================================================
                 Rock ✊, Paper ✋ n Scissors ✌
-=====================================================================
+==========================================================
 ''')
 
 player_wins = 0
@@ -23,7 +23,7 @@ while player_wins < 3 and npc_wins < 3:
         print(f'PC chooses {npc} \n Its a Draw!!! ')
     elif player_1 == 'rock' and npc == 'paper':
         print(f'PC chooses {npc} \n You Lose!!! ')
-        npc_wins += 1
+        npc_wins += 1 
     elif player_1 == 'rock' and npc == 'scissors':
         print(f'PC chooses {npc} \n You Win!!! ')
         player_wins += 1
